@@ -2,20 +2,20 @@
   "artists": [
     {
       "id": 1,
-      "name": "Tejiri",
-      "picture": "https://via.placeholder.com/300x300?text=Tejiri",
-      "niche": ["Narrator", "Animation"],
-      "strengths": ["Deep voice", "Emotional range", "Professional delivery"],
-      "specializations": ["Commercial", "Audiobook", "Documentary"],
+      "name": "Kristin Paiva",
+      "picture": "images/Kristin-Paiva.png",
+      "niche": ["Casting Director", "Voice Coach"],
+      "strengths": ["Industry expertise", "Character development", "Professional standards"],
+      "specializations": ["Casting direction", "Voice coaching", "Character refinement"],
       "experience": "Professional",
-      "yearsInIndustry": 8,
-      "languages": ["English", "Pidgin"],
+      "yearsInIndustry": 15,
+      "languages": ["English"],
       "demoLink": "https://youtube.com/watch?v=placeholder",
-      "email": "tejiri@voforce.com",
-      "phone": "+234 813 570 1844",
-      "website": "https://tejiri-voforce.com",
-      "rates": "Negotiable",
-      "shortBio": "Experienced voice-over artist with a passion for bringing characters to life. Specializes in commercial and audiobook narration."
+      "email": "kristin@voforce.com",
+      "phone": "+1 USA",
+      "website": "#",
+      "rates": "Contact for rates",
+      "shortBio": "Highly respected casting director, expert voice coach, and Disney alum. Bridges the gap between raw talent and booking major roles with unparalleled industry insight."
     },
     {
       "id": 2,
