@@ -36,20 +36,20 @@
     },
     {
       "id": 3,
-      "name": "Sample Artist",
-      "picture": "https://via.placeholder.com/300x300?text=Artist",
-      "niche": ["IVR", "Phone Systems"],
-      "strengths": ["Clear articulation", "Professional tone"],
-      "specializations": ["Automated systems", "Corporate messaging"],
-      "experience": "Intermediate",
-      "yearsInIndustry": 3,
-      "languages": ["English"],
+      "name": "Wakio Mzenge",
+      "picture": "images/Wakio-Mzenge.png",
+      "niche": ["Audio Drama", "Voice Acting"],
+      "strengths": ["Audio drama expert", "Character development", "Versatile performer"],
+      "specializations": ["Audio drama production", "Voice acting", "Film acting", "Sound design"],
+      "experience": "Professional",
+      "yearsInIndustry": 10,
+      "languages": ["English", "Swahili"],
       "demoLink": "https://youtube.com/watch?v=placeholder",
-      "email": "artist@voforce.com",
-      "phone": "+234 XXX XXX XXXX",
+      "email": "wakio@voforce.com",
+      "phone": "+254 Kenya",
       "website": "#",
       "rates": "Contact for rates",
-      "shortBio": "Professional voice artist ready to join VO FORCE (VOF) community."
+      "shortBio": "East African multifaceted talent - audio drama expert, voice actor, producer, and film actor. Specializes in immersive sonic experiences and authentic storytelling from both sides of the microphone."
     }
   ]
 }
