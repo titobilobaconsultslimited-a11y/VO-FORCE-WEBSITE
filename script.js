@@ -277,16 +277,13 @@ async function loadArtistProfile() {
     // Check if it's a Google Drive link
     if (artist.demoLink.includes('drive.google.com')) {
       const googleDriveId = extractGoogleDriveId(artist.demoLink);
-      const audioUrl = `https://drive.google.com/uc?export=download&id=${googleDriveId}`;
       
       demoEmbed.innerHTML = `
-        <div style="background: var(--off-white); padding: 30px; border-radius: 8px; text-align: center;">
-          <h4 style="margin-bottom: 20px; color: var(--primary-red);">🎤 Voice Demo</h4>
-          <audio controls style="width: 100%; max-width: 500px; display: block; margin: 0 auto;">
-            <source src="${audioUrl}" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-          <p style="margin-top: 15px; color: var(--text-muted); font-size: 0.9rem;">Click play to hear ${artist.name}'s voiceover demo</p>
+        <div style="background: var(--off-white); padding: 20px; border-radius: 8px;">
+          <h4 style="margin-bottom: 15px; color: var(--primary-red); text-align: center;">🎤 Voice Demo</h4>
+          <iframe src="https://drive.google.com/file/d/${googleDriveId}/preview" 
+            width="100%" height="100" style="border: none; border-radius: 4px;"></iframe>
+          <p style="margin-top: 15px; color: var(--text-muted); font-size: 0.9rem; text-align: center;">Listen to ${artist.name}'s voiceover demo</p>
         </div>
       `;
     } 
