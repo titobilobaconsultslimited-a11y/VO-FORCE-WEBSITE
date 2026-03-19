@@ -50,6 +50,23 @@
       "website": "#",
       "rates": "Contact for rates",
       "shortBio": "East African multifaceted talent - audio drama expert, voice actor, producer, and film actor. Specializes in immersive sonic experiences and authentic storytelling from both sides of the microphone."
+    },
+    {
+      "id": 4,
+      "name": "Oluwatobi Kolapo",
+      "picture": "images/Oluwatobi Kolapo.jpeg",
+      "niche": ["Voiceover Artist", "Web Developer", "Business Strategist"],
+      "strengths": ["Dynamic energy", "Clear delivery", "Technical proficiency", "Versatile skills"],
+      "specializations": ["Voiceover performance", "Web development", "Live broadcasting", "Virtual assistance"],
+      "experience": "Professional",
+      "yearsInIndustry": 8,
+      "languages": ["English"],
+      "demoLink": "https://youtube.com/watch?v=placeholder",
+      "email": "oluwatobi@voforce.com",
+      "phone": "+234 Lagos, Nigeria",
+      "website": "https://titobilobaconsult.com",
+      "rates": "Contact for rates",
+      "shortBio": "Dynamic multifaceted professional - voiceover artist, web developer, business compliance strategist, and virtual assistant. Founder of Titobiloba Consult Limited with expertise in live broadcasting and digital solutions."
     }
   ]
 }
