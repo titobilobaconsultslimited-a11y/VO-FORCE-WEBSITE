@@ -1,0 +1,55 @@
+{
+  "artists": [
+    {
+      "id": 1,
+      "name": "Tejiri",
+      "picture": "https://via.placeholder.com/300x300?text=Tejiri",
+      "niche": ["Narrator", "Animation"],
+      "strengths": ["Deep voice", "Emotional range", "Professional delivery"],
+      "specializations": ["Commercial", "Audiobook", "Documentary"],
+      "experience": "Professional",
+      "yearsInIndustry": 8,
+      "languages": ["English", "Pidgin"],
+      "demoLink": "https://youtube.com/watch?v=placeholder",
+      "email": "tejiri@voforce.com",
+      "phone": "+234 813 570 1844",
+      "website": "https://tejiri-voforce.com",
+      "rates": "Negotiable",
+      "shortBio": "Experienced voice-over artist with a passion for bringing characters to life. Specializes in commercial and audiobook narration."
+    },
+    {
+      "id": 2,
+      "name": "King E",
+      "picture": "images/king-e.png",
+      "niche": ["Commercial", "Gaming"],
+      "strengths": ["Versatile", "Quick turnaround", "Studio quality"],
+      "specializations": ["Radio ads", "Video game characters", "E-learning"],
+      "experience": "Intermediate",
+      "yearsInIndustry": 5,
+      "languages": ["English", "Yoruba"],
+      "demoLink": "https://youtube.com/watch?v=placeholder",
+      "email": "kinge@voforce.com",
+      "phone": "+234 813 515 0127",
+      "website": "https://kinge-voforce.com",
+      "rates": "Per project basis",
+      "shortBio": "Creative voice artist focused on bringing authentic emotion to commercial projects and gaming content."
+    },
+    {
+      "id": 3,
+      "name": "Sample Artist",
+      "picture": "https://via.placeholder.com/300x300?text=Artist",
+      "niche": ["IVR", "Phone Systems"],
+      "strengths": ["Clear articulation", "Professional tone"],
+      "specializations": ["Automated systems", "Corporate messaging"],
+      "experience": "Intermediate",
+      "yearsInIndustry": 3,
+      "languages": ["English"],
+      "demoLink": "https://youtube.com/watch?v=placeholder",
+      "email": "artist@voforce.com",
+      "phone": "+234 XXX XXX XXXX",
+      "website": "#",
+      "rates": "Contact for rates",
+      "shortBio": "Professional voice artist ready to join VO FORCE (VOF) community."
+    }
+  ]
+}

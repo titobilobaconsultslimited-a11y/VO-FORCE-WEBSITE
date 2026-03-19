@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VO FORCE (VOF) - Voice Over Artists Community</title>
+  <meta name="description" content="Discover talented voice-over artists, connect with professionals, and join VO FORCE (VOF) community for audiobook narration, commercials, animation, and more.">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="index.html" class="nav-brand">
+    <div class="nav-logo"><img src="images/logo.png" alt="VO FORCE (VOF) Logo" style="width: 50px; height: 50px;"></div>
+    <div class="nav-text">
+      <h1>VO FORCE (VOF)</h1>
+      <p>Voice Over Community</p>
+    </div>
+  </a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="artists.html" class="nav-link">Artists</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="contact.html" class="btn">Join Community</a>
+    <button class="hamburger" onclick="toggleMobMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html">Home</a>
+  <a href="artists.html">Artists</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html">Join Community</a>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/2348135701844?text=Hi%20Tejiri%20from%20THE%20VO%20FORCE" class="wa-float" target="_blank" title="WhatsApp">💬</a>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-left">
+        <h1>VO FORCE (VOF)</h1>
+        <p>Connect with talented voice-over artists. Find the perfect voice for your project and join a thriving community of professionals dedicated to excellence in voice acting.</p>
+        <div class="hero-cta">
+          <a href="artists.html" class="btn">Discover Artists</a>
+          <a href="contact.html" class="btn btn-outline">Join Us</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-logo-placeholder"><img src="images/logo.png" alt="VO FORCE (VOF) Logo" style="width: 200px; height: 200px;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED ARTISTS -->
+<section class="featured-section">
+  <div class="container">
+    <h2 class="section-title">Featured Artists</h2>
+    <div class="artists-grid" id="featuredArtists"></div>
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="artists.html" class="btn">View All Artists</a>
+    </div>
+  </div>
+</section>
+
+<!-- MEET KING E SECTION -->
+<section style="background: var(--white); padding: 80px 40px;">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
+      <div>
+        <img src="images/king-e.png" alt="King E - Emmanuel Macaulay Afemikhe" style="width: 100%; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        <div style="background: var(--primary-red); padding: 40px; border-radius: 15px; color: var(--white);">
+          <h3 style="margin-bottom: 30px; font-size: 1.5rem;">Key Industry Milestones</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
+              <strong>Founder & CEO:</strong><br>Voiceover Workshop & Media
+            </li>
+            <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
+              <strong>Founder:</strong><br>VOFORCE Community
+            </li>
+            <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
+              <strong>Convener:</strong><br>The Voiceover Conference (Africa's largest VO event)
+            </li>
+            <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
+              <strong>Creator:</strong><br>VO Star (formerly the Nigerian Voice acting contest)
+            </li>
+            <li>
+              <strong>Award Winner:</strong><br>2024 APVA Voiceover Legacy Award
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2 style="color: var(--primary-red); margin-bottom: 30px; font-size: 2.5rem;">Meet King E</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; color: var(--dark-text);">
+          Emmanuel Macaulay Afemikhe, widely known in the industry as King E, is a trailblazing Nigerian voiceover artist, renowned coach, and visionary entrepreneur. With over 13 years of dedicated experience, he has cemented his place as a foundational pillar of the African voice acting community.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; color: var(--dark-text);">
+          As the Founder and CEO of Voiceover Workshop & Media, King E has established a leading training and production institute that equips emerging talents with the skills needed to thrive on the global stage. His passion for community building led him to create VOFORCE, a dynamic network empowering voiceover artists to collaborate, learn, and grow together.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; color: var(--dark-text);">
+          King E is also the pioneering convener of The Voiceover Conference, recognised as the first and largest event of its kind in Africa. His commitment to talent development sparked the creation of the Nigerian voice acting contest, which has since evolved into the celebrated VO Star platform.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: var(--dark-text);">
+          In September 2024, his massive contributions to the industry were officially honoured when he was awarded the prestigious Voiceover Legacy Award at the Africa Podcast and Voice Awards (APVA).
+        </p>
+      </div>
+    </div>
+    <div style="margin-top: 40px; padding-top: 40px; border-top: 2px solid var(--light-gray); text-align: center;">
+      <p style="font-size: 1.1rem; color: var(--dark-text); line-height: 1.8;">
+        Whether he is behind the microphone delivering compelling audio or mentoring the next generation of African voices, King E's mission remains clear: to ensure that every great voice has the opportunity to be heard around the world.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section style="background: var(--primary-red); color: var(--white); padding: 80px 40px; text-align: center;">
+  <div class="container">
+    <h2 style="color: var(--white); margin-bottom: 20px;">Ready to Join VO FORCE (VOF)?</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 40px; color: rgba(255, 255, 255, 0.9);">
+      Whether you're a seasoned professional or just starting your voice-over journey, 
+      there's a place for you in our community.
+    </p>
+    <a href="contact.html" class="btn" style="background: var(--white); color: var(--primary-red); border-color: var(--white);">Get Started Today</a>
+  </div>
+</section>
+
+<!-- QUICK LINKS -->
+<section style="background: var(--off-white); padding: 60px 40px;">
+  <div class="container">
+    <div class="values-grid">
+      <div class="value-card">
+        <h3>🎯 Find Artists</h3>
+        <p>Browse our directory of skilled voice-over professionals across all niches and experience levels.</p>
+      </div>
+      <div class="value-card">
+        <h3>🤝 Connect</h3>
+        <p>Get in touch with artists directly via email, phone, or WhatsApp. Easy collaboration for your projects.</p>
+      </div>
+      <div class="value-card">
+        <h3>🌟 Join Community</h3>
+        <p>Become part of VO FORCE (VOF) and grow your network with fellow voice-over professionals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>VO FORCE (VOF)</h4>
+      <p>A community dedicated to connecting talented voice-over artists with opportunities and each other.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: info@thevoforce.com</p>
+      <p><a href="https://wa.me/2348135701844">WhatsApp: +234 813 570 1844</a></p>
+      <p>Communities across Africa</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 VO FORCE (VOF). All rights reserved. Bringing voices to life.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Load featured artists
+  async function loadFeaturedArtists() {
+    const response = await fetch('./data/artists.json');
+    const data = await response.json();
+    const featured = data.artists.slice(0, 3);
+    const container = document.getElementById('featuredArtists');
+    
+    container.innerHTML = featured.map(artist => `
+      <div class="artist-card">
+        <div class="artist-image">
+          <img src="${artist.picture}" alt="${artist.name}" onerror="this.style.display='none'">
+        </div>
+        <div class="artist-info">
+          <h3>${artist.name}</h3>
+          <div class="artist-niche">
+            ${artist.niche.map(n => `<span class="niche-tag">${n}</span>`).join('')}
+          </div>
+          <p><strong>Experience:</strong> ${artist.experience}</p>
+          <div class="artist-contact">
+            <a href="mailto:${artist.email}" title="Email">📧</a>
+            <a href="tel:${artist.phone.replace(/\s/g, '')}" title="Call">📱</a>
+            ${artist.website && artist.website !== '#' ? `<a href="${artist.website}" target="_blank" title="Website">🌐</a>` : ''}
+          </div>
+          <a href="artist-profile.html?id=${artist.id}" class="view-profile">View Profile</a>
+        </div>
+      </div>
+    `).join('');
+  }
+  
+  document.addEventListener('DOMContentLoaded', loadFeaturedArtists);
+</script>
+</body>
+</html>

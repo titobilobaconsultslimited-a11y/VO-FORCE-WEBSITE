@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artists Directory - VO FORCE (VOF)</title>
+  <meta name="description" content="Browse and discover voice-over artists in VO FORCE (VOF) community. Filter by niche, experience level, and specialization.">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="index.html" class="nav-brand">
+    <div class="nav-logo"><img src="images/logo.png" alt="VO FORCE (VOF) Logo" style="width: 50px; height: 50px;"></div>
+    <div class="nav-text">
+      <h1>VO FORCE (VOF)</h1>
+      <p>Voice Over Community</p>
+    </div>
+  </a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="artists.html" class="nav-link active">Artists</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="contact.html" class="btn">Join Community</a>
+    <button class="hamburger" onclick="toggleMobMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html">Home</a>
+  <a href="artists.html">Artists</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html">Join Community</a>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/2348135701844?text=Hi%20from%20THE%20VO%20FORCE" class="wa-float" target="_blank" title="WhatsApp">💬</a>
+
+<!-- HEADER -->
+<div class="gallery-header">
+  <h1>Artists Directory</h1>
+  <p>Discover our community of talented voice-over professionals</p>
+</div>
+
+<!-- FILTER SECTION -->
+<div class="filter-section">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search artists by name or bio...">
+  </div>
+  <div class="filter-box">
+    <label>Specialization:</label>
+    <select id="nicheFilter">
+      <option value="">All Specializations</option>
+    </select>
+  </div>
+  <div class="filter-box">
+    <label>Experience:</label>
+    <select id="experienceFilter">
+      <option value="">All Levels</option>
+    </select>
+  </div>
+</div>
+
+<!-- ARTISTS GALLERY -->
+<div class="gallery-content">
+  <div class="artists-grid" id="artistsGrid">
+    <p style="grid-column: 1/-1; text-align: center; padding: 60px; color: #777;">Loading artists...</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>VO FORCE (VOF)</h4>
+      <p>A community dedicated to connecting talented voice-over artists with opportunities and each other.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: info@thevoforce.com</p>
+      <p><a href="https://wa.me/2348135701844">WhatsApp: +234 813 570 1844</a></p>
+      <p>Communities across Africa</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 VO FORCE (VOF). All rights reserved. Bringing voices to life.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
