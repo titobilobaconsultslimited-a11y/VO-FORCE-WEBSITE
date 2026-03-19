@@ -2,10 +2,22 @@
 // VO FORCE (VOF) — MAIN JAVASCRIPT
 // ═══════════════════════════════════════════════════════════
 
+// ── MOBILE DETECTION ──
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+function getViewportWidth() {
+  return Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+}
+
 // ── MOBILE MENU TOGGLE ──
 function toggleMobMenu() {
   const mobMenu = document.getElementById('mobMenu');
   mobMenu?.classList.toggle('open');
+  
+  // Prevent body scroll when mobile menu is open
+  document.body.style.overflow = mobMenu?.classList.contains('open') ? 'hidden' : 'auto';
 }
 
 // Close mobile menu when clicking on a link
@@ -15,6 +27,25 @@ document.addEventListener('DOMContentLoaded', function() {
     link.addEventListener('click', () => {
       toggleMobMenu();
     });
+  });
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const mobMenu = document.getElementById('mobMenu');
+    const nav = document.querySelector('nav');
+    
+    if (mobMenu?.classList.contains('open') && 
+        !mobMenu.contains(event.target) && 
+        !nav.contains(event.target)) {
+      toggleMobMenu();
+    }
+  });
+
+  // Close mobile menu on window resize
+  window.addEventListener('resize', () => {
+    if (getViewportWidth() > 768 && document.getElementById('mobMenu')?.classList.contains('open')) {
+      toggleMobMenu();
+    }
   });
 
   // Set active nav link
@@ -28,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Setup search and filter
   setupSearchAndFilter();
 });
+
 
 // ── UPDATE ACTIVE NAV LINK ──
 function updateActiveNavLink() {

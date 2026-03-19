@@ -940,6 +940,7 @@ footer {
 /* RESPONSIVE DESIGN                              */
 /* ══════════════════════════════════════════════ */
 
+/* TABLET & MEDIUM DEVICES (max-width: 768px) */
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
@@ -949,9 +950,25 @@ footer {
     font-size: 1.5rem;
   }
 
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
   nav {
     padding: 0 20px;
     height: 60px;
+  }
+
+  .nav-text h1 {
+    font-size: 14px;
+  }
+
+  .nav-text p {
+    font-size: 9px;
   }
 
   .hamburger {
@@ -960,6 +977,11 @@ footer {
 
   .nav-right {
     display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 100px 0 60px;
   }
 
   .hero-content {
@@ -972,8 +994,70 @@ footer {
     font-size: 2.5rem;
   }
 
+  .hero-left p {
+    font-size: 1rem;
+  }
+
   .hero-right {
     display: none;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 13px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .artists-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .featured-section,
+  .gallery-content,
+  .about-content,
+  .demo-section {
+    padding: 40px 20px;
+  }
+
+  .gallery-header,
+  .about-hero,
+  .contact-hero,
+  .profile-header {
+    padding: 60px 20px;
+  }
+
+  .gallery-header h1,
+  .about-hero h1,
+  .contact-hero h1,
+  .profile-header h1 {
+    font-size: 2rem;
+  }
+
+  .filter-section {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  .search-box,
+  .filter-box {
+    width: 100%;
+  }
+
+  .search-box input,
+  .filter-box select {
+    width: 100%;
   }
 
   .profile-hero,
@@ -985,27 +1069,24 @@ footer {
 
   .profile-image {
     max-width: 100%;
+    margin: 0 auto;
   }
 
-  .featured-section,
-  .gallery-content,
-  .about-content,
-  .demo-section {
-    padding: 40px 20px;
-  }
-
-  .filter-section {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .search-box,
-  .filter-box {
-    width: 100%;
+  .profile-meta {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .contact-form {
     width: 100%;
+  }
+
+  .contact-info {
+    gap: 20px;
+  }
+
+  .form-embed iframe {
+    min-height: 500px;
   }
 
   .footer-content {
@@ -1021,51 +1102,433 @@ footer {
     height: 50px;
     font-size: 24px;
   }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .value-card {
+    padding: 20px;
+  }
+
+  .demo-embed {
+    height: 300px;
+  }
+
+  .mob-menu {
+    padding-top: 30px;
+  }
+
+  .mob-menu a {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  /* King E Section */
+  [style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  [style*="display: grid; gap: 60px"] {
+    gap: 30px !important;
+    padding: 40px 20px !important;
+  }
 }
 
+/* MOBILE DEVICES (max-width: 480px) */
 @media (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+
   h1 {
     font-size: 1.5rem;
+    letter-spacing: -0.01em;
   }
 
   h2 {
     font-size: 1.2rem;
   }
 
-  nav {
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .container {
     padding: 0 15px;
   }
 
+  nav {
+    padding: 0 15px;
+    height: 55px;
+  }
+
+  .nav-brand {
+    gap: 8px;
+  }
+
+  .nav-logo {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .nav-text h1 {
+    font-size: 12px;
+  }
+
+  .nav-text p {
+    font-size: 8px;
+  }
+
+  .hero {
+    padding: 80px 0 40px;
+  }
+
+  .hero-content {
+    padding: 30px 15px;
+  }
+
   .hero-left h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
   }
 
   .hero-left p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
   }
 
   .hero-cta {
     flex-direction: column;
+    gap: 12px;
   }
 
   .btn {
-    width: 100%;
+    padding: 12px 20px;
+    font-size: 12px;
   }
 
-  .profile-meta {
-    grid-template-columns: 1fr;
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
   }
 
   .artists-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 15px;
+  }
+
+  .artist-card {
+    border-radius: 6px;
+  }
+
+  .artist-image {
+    height: 180px;
+    font-size: 40px;
+  }
+
+  .artist-info {
+    padding: 16px;
+  }
+
+  .artist-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .niche-tag {
+    font-size: 10px;
+    padding: 3px 10px;
+  }
+
+  .featured-section,
+  .gallery-content,
+  .about-content,
+  .demo-section {
+    padding: 30px 15px;
+  }
+
+  .gallery-header,
+  .about-hero,
+  .contact-hero,
+  .profile-header {
+    padding: 50px 15px;
+    margin-top: 55px;
+  }
+
+  .gallery-header h1,
+  .about-hero h1,
+  .contact-hero h1,
+  .profile-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .gallery-header p,
+  .about-hero p,
+  .contact-hero p {
+    font-size: 0.9rem;
+  }
+
+  .filter-section {
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 12px;
+  }
+
+  .search-box,
+  .filter-box {
+    width: 100%;
+  }
+
+  .search-box input,
+  .filter-box select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .form-group textarea {
+    min-height: 100px;
+  }
+
+  .profile-hero,
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px 15px;
+  }
+
+  .profile-image {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .profile-details h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .profile-meta {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 30px 0;
+  }
+
+  .meta-item {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .meta-item strong {
+    font-size: 11px;
+  }
+
+  .profile-tags {
+    margin: 20px 0;
+    gap: 8px;
+  }
+
+  .profile-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-info {
+    gap: 15px;
+  }
+
+  .contact-item {
+    padding: 16px;
+  }
+
+  .contact-item h3 {
+    font-size: 1rem;
+  }
+
+  .form-embed {
+    padding: 30px 15px;
+  }
+
+  .form-embed h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .form-embed iframe {
+    min-height: 400px;
   }
 
   .demo-embed {
-    height: 250px;
+    height: 200px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .value-card {
+    padding: 16px;
+  }
+
+  .value-card h3 {
+    font-size: 1rem;
+  }
+
+  .value-card p {
+    font-size: 0.85rem;
   }
 
   .footer-content {
-    gap: 30px;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  footer {
+    padding: 40px 15px 20px;
+  }
+
+  .footer-section h4 {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    padding-top: 20px;
+    font-size: 0.8rem;
+  }
+
+  .wa-float {
+    bottom: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .mob-menu {
+    padding-top: 20px;
+  }
+
+  .mob-menu a {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  /* Inline grid/flex responsiveness */
+  [style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  [style*="display: grid; gap: 60px"] {
+    gap: 20px !important;
+    padding: 30px 15px !important;
+  }
+
+  [style*="display: grid; grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
   }
 }
+
+/* EXTRA SMALL DEVICES (max-width: 360px) */
+@media (max-width: 360px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  nav {
+    padding: 0 12px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 11px;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .artist-info {
+    padding: 12px;
+  }
+
+  .featured-section,
+  .gallery-content,
+  .about-content,
+  .demo-section {
+    padding: 20px 12px;
+  }
+
+  .gallery-header,
+  .about-hero,
+  .contact-hero,
+  .profile-header {
+    padding: 40px 12px;
+  }
+}
+
+/* LARGE SCREENS (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  .hero-left h1 {
+    font-size: 4rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 60px;
+  }
+
+  .artists-grid {
+    gap: 50px;
+  }
+}
+
