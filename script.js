@@ -20,6 +20,19 @@ function toggleMobMenu() {
   document.body.style.overflow = mobMenu?.classList.contains('open') ? 'hidden' : 'auto';
 }
 
+// ── JOIN COMMUNITY MODAL ──
+function openJoinModal() {
+  document.getElementById('joinModal')?.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeJoinModal(event) {
+  if (!event || event.target.id === 'joinModal') {
+    document.getElementById('joinModal')?.classList.remove('open');
+    document.body.style.overflow = 'auto';
+  }
+}
+
 // Close mobile menu when clicking on a link
 document.addEventListener('DOMContentLoaded', function() {
   const mobMenuLinks = document.querySelectorAll('.mob-menu a');
@@ -46,6 +59,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (getViewportWidth() > 768 && document.getElementById('mobMenu')?.classList.contains('open')) {
       toggleMobMenu();
     }
+  });
+
+  // Close join modal on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeJoinModal();
   });
 
   // Set active nav link

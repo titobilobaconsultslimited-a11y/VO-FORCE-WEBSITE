@@ -24,7 +24,7 @@
     <a href="artists.html" class="nav-link">Artists</a>
     <a href="about.html" class="nav-link active">About</a>
     <a href="contact.html" class="nav-link">Contact</a>
-    <a href="https://chat.whatsapp.com/EXI8QbrhR282KPdLbnt1DX?mode=hq2tcla" class="btn" target="_blank">Join Community</a>
+    <a href="#" class="btn" onclick="openJoinModal(); return false;">Join Community</a>
     <button class="hamburger" onclick="toggleMobMenu()"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -35,7 +35,7 @@
   <a href="artists.html">Artists</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
-  <a href="https://chat.whatsapp.com/EXI8QbrhR282KPdLbnt1DX?mode=hq2tcla" target="_blank">Join Community</a>
+  <a href="#" onclick="openJoinModal(); return false;">Join Community</a>
 </div>
 
 <!-- WHATSAPP FLOAT -->
@@ -222,5 +222,29 @@
 </footer>
 
 <script src="script.js"></script>
+
+<!-- JOIN COMMUNITY MODAL -->
+<div class="join-modal-overlay" id="joinModal" onclick="closeJoinModal(event)">
+  <div class="join-modal">
+    <button class="join-modal-close" onclick="closeJoinModal()">&times;</button>
+    <h2>VOF Community Membership</h2>
+    <p>We are excited to officially introduce the VOF Community Membership.</p>
+    <p>VOF is a growing community of voice talents committed to learning, collaboration, and growth in the voice-over industry.</p>
+    <p><strong>With our yearly membership, you gain access to:</strong></p>
+    <ul>
+      <li>Discounted webinars and conferences</li>
+      <li>Exclusive training sessions</li>
+      <li>Mentorship opportunities</li>
+      <li>Voice-over job opportunities</li>
+      <li>Collaboration with other voice talents</li>
+      <li>Community challenges to sharpen your skills</li>
+    </ul>
+    <p class="join-modal-fee">Membership Fee: &#8358;25,000 yearly</p>
+    <p>This is more than a community.<br>It is a space to develop your voice, grow your confidence, and expand your opportunities.</p>
+    <p>Join the VOF community and grow with us.</p>
+    <p class="join-modal-tagline">VOF &ndash; Learn. Collaborate. Grow.</p>
+    <a href="https://paystack.shop/pay/cryt6vhcu7" class="btn join-modal-pay-btn" target="_blank">PAY NOW</a>
+  </div>
+</div>
 </body>
 </html>
